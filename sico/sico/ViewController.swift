@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tappedLogin(_ sender: Any) {
+        
+        if (usernameTextField.text?.isEmpty)! {
+           
+            
+        } else {
+            //ダイアログ表示
+        }
+        
+        if (passwordTextField.text?.isEmpty)! {
+            
+        } else {
+            //ダイアログ表示
+        }
+    }
 
 }
 
