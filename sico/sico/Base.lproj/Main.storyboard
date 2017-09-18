@@ -74,15 +74,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここはItem1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg9-LF-775">
-                                <rect key="frame" x="132" y="323" width="111" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansMonoCJKjp-Regular" family="Noto Sans Mono CJK JP" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="339" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-7S-F55">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeLineCell" rowHeight="339" id="Sqw-y7-bP7">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="339"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sqw-y7-bP7" id="mmI-lQ-Y6y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUG-VM-Rkj">
+                                                    <rect key="frame" x="18" y="0.0" width="357" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansMonoCJKjp-Regular" family="Noto Sans Mono CJK JP" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="faC-5Q-GXA">
+                                                    <rect key="frame" x="0.0" y="37" width="375" height="301"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C7Y-hb-4db" id="3hx-tm-B21"/>
+                                    <outlet property="delegate" destination="C7Y-hb-4db" id="eUG-sQ-GP9"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a5t-7S-F55" secondAttribute="trailing" id="FTX-Je-nWY"/>
+                            <constraint firstItem="a5t-7S-F55" firstAttribute="top" secondItem="XjA-nU-Tl7" secondAttribute="top" id="GDR-YV-5j9"/>
+                            <constraint firstItem="a5t-7S-F55" firstAttribute="leading" secondItem="XjA-nU-Tl7" secondAttribute="leading" id="N6y-8c-JTN"/>
+                            <constraint firstAttribute="bottom" secondItem="a5t-7S-F55" secondAttribute="bottom" id="pjS-Yr-IZd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gFS-2x-iye">
                         <barButtonItem key="rightBarButtonItem" title="ログイン" id="9UD-m8-nqk">
@@ -94,11 +124,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="loginButton" destination="9UD-m8-nqk" id="62f-FV-GJN"/>
+                        <outlet property="timelineTableView" destination="a5t-7S-F55" id="490-My-4bR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToO-cl-jrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4110" y="-628"/>
+            <point key="canvasLocation" x="4109.6000000000004" y="-628.33583208395805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QRF-gy-A19">

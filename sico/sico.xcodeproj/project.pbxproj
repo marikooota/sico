@@ -16,6 +16,7 @@
 		8C4B43AA1F6A962300F5A556 /* NotoSansMonoCJKjp-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C4B43A81F6A95E000F5A556 /* NotoSansMonoCJKjp-Bold.otf */; };
 		8C4B43AB1F6A962300F5A556 /* NotoSansMonoCJKjp-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C4B43A91F6A95E000F5A556 /* NotoSansMonoCJKjp-Regular.otf */; };
 		8C4B43AD1F6A9BD100F5A556 /* HomeListPageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B43AC1F6A9BD100F5A556 /* HomeListPageItem.swift */; };
+		8C4B43AF1F6EECE800F5A556 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4B43AE1F6EECE800F5A556 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8C4B43A81F6A95E000F5A556 /* NotoSansMonoCJKjp-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansMonoCJKjp-Bold.otf"; path = "../../../../Library/Fonts/NotoSansMonoCJKjp-Bold.otf"; sourceTree = "<group>"; };
 		8C4B43A91F6A95E000F5A556 /* NotoSansMonoCJKjp-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansMonoCJKjp-Regular.otf"; path = "../../../../Library/Fonts/NotoSansMonoCJKjp-Regular.otf"; sourceTree = "<group>"; };
 		8C4B43AC1F6A9BD100F5A556 /* HomeListPageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListPageItem.swift; sourceTree = "<group>"; };
+		8C4B43AE1F6EECE800F5A556 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,10 @@
 		8C4B43681F6527D300F5A556 /* sico */ = {
 			isa = PBXGroup;
 			children = (
-				8C4B439D1F6A8CDC00F5A556 /* fonts */,
 				8C4B43691F6527D300F5A556 /* AppDelegate.swift */,
 				8C4B436D1F6527D300F5A556 /* Main.storyboard */,
 				8C4B43701F6527D300F5A556 /* Assets.xcassets */,
+				8C4B43AE1F6EECE800F5A556 /* Images.xcassets */,
 				8C4B43721F6527D300F5A556 /* LaunchScreen.storyboard */,
 				8C4B43751F6527D300F5A556 /* Info.plist */,
 				8C4B436B1F6527D300F5A556 /* ViewController.swift */,
@@ -75,13 +77,6 @@
 				8C4B43A91F6A95E000F5A556 /* NotoSansMonoCJKjp-Regular.otf */,
 			);
 			path = sico;
-			sourceTree = "<group>";
-		};
-		8C4B439D1F6A8CDC00F5A556 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +141,7 @@
 				8C4B43AA1F6A962300F5A556 /* NotoSansMonoCJKjp-Bold.otf in Resources */,
 				8C4B43AB1F6A962300F5A556 /* NotoSansMonoCJKjp-Regular.otf in Resources */,
 				8C4B43741F6527D300F5A556 /* LaunchScreen.storyboard in Resources */,
+				8C4B43AF1F6EECE800F5A556 /* Images.xcassets in Resources */,
 				8C4B43711F6527D300F5A556 /* Assets.xcassets in Resources */,
 				8C4B436F1F6527D300F5A556 /* Main.storyboard in Resources */,
 			);
