@@ -177,12 +177,14 @@
             </objects>
             <point key="canvasLocation" x="-47" y="139"/>
         </scene>
-        <!--Item-->
+        <!--List Tab Navigation Controller-->
         <scene sceneID="Ryi-ee-Vyu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkH-R1-7Lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xdd-eB-bNy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jLo-5j-GdW"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xdd-eB-bNy" customClass="ListTabNavigationController" customModule="sico" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_list" selectedImage="tab_list" id="jLo-5j-GdW">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="X7P-Wm-NZR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -196,12 +198,14 @@
             </objects>
             <point key="canvasLocation" x="3273" y="-628"/>
         </scene>
-        <!--Item-->
+        <!--Favorite Navigation Controller-->
         <scene sceneID="cMe-QY-qcq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6Z-jW-K9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0hl-rZ-KIZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="c3G-qA-vIL"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0hl-rZ-KIZ" customClass="FavoriteNavigationController" customModule="sico" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_favorite" selectedImage="tab_favorite" id="c3G-qA-vIL">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NfM-Nf-hlx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -235,6 +239,10 @@
             <point key="canvasLocation" x="2340" y="-312.59370314842579"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_favorite" width="25" height="24"/>
+        <image name="tab_list" width="25" height="15"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Hah-NK-QaI"/>
     </inferredMetricsTieBreakers>

@@ -27,9 +27,7 @@ class HomeListPageItem: UIViewController,UITableViewDelegate, UITableViewDataSou
     
     //各セルの要素を設定する
     internal func tableView(_ timelineTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "timeLineCell")
         let cell = timelineTableView.dequeueReusableCell(withIdentifier: "timeLineCell")! as UITableViewCell
-//        cell.textLabel!.text = program[indexPath.row]
         let imageView = cell.viewWithTag(1) as! UIImageView
         imageView.image = UIImage(named: "timeline_image1")
         let label = cell.viewWithTag(2) as! UILabel
