@@ -30,6 +30,7 @@ class HomeListPageItem: UIViewController,UITableViewDelegate, UITableViewDataSou
         let cell = timelineTableView.dequeueReusableCell(withIdentifier: "timeLineCell")! as UITableViewCell
         let imageView = cell.viewWithTag(1) as! UIImageView
         imageView.image = UIImage(named: "timeline_image1")
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
         let label = cell.viewWithTag(2) as! UILabel
         label.text = "unfull"
         return cell
@@ -42,6 +43,7 @@ class HomeListPageItem: UIViewController,UITableViewDelegate, UITableViewDataSou
     
     //セルが選択された時に動作する
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         return
     }
 }
