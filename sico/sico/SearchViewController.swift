@@ -15,35 +15,19 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let hashtag: UITabBarItem = searchKindTabBar.viewWithTag(0)
-//        for item in searchKindTabBar.items!{
-//            switch item.tag {
-//            case 0:
-//                item.imageInsets = UIEdgeInsetsMake(40, 0, -40, 0)
-//                
-//                break
-//            case 1:
-//                item.imageInsets = UIEdgeInsetsMake(30, 0, -30, 0)
-//                break
-//            case 2:
-//                item.imageInsets = UIEdgeInsetsMake(25, 0, -25, 0)
-//                break
-//            default:
-//                break
-//            }
-//        }
         
-        navigationController?.navigationBar
-        let navigationHeaderColor = self.navigationController?.navigationBar.backgroundColor
-        searchBar.backgroundColor = navigationHeaderColor
+        let searchTextField: UITextField = (searchBar.value(forKey: "searchField") as? UITextField)!
+        searchTextField.layer.cornerRadius = 100
+        searchBar.clipsToBounds = true
+        
+        //TabBar選択時の色を黒に
         searchKindTabBar.tintColor = UIColor.black
         searchKindTabBar.barTintColor = UIColor.init(white: 1, alpha: 0)
-//        searchKindTabBar.backgroundImage
-        searchKindTabBar.backgroundImage = UIImage(withBackground: UIColor.clear)
         
+        //TabBar背景を透過
+        searchKindTabBar.backgroundImage = UIImage(withBackground: UIColor.clear)
         searchKindTabBar.shadowImage = UIImage()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {

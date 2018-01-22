@@ -44,6 +44,16 @@ class HomeListPageItem: UIViewController,UITableViewDelegate, UITableViewDataSou
     //セルが選択された時に動作する
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "toUserSiteViewController",sender: nil)
         return
+    }
+    
+    // Segue 準備
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if segue.identifier == "toUserSiteViewController" {
+//            let subVC: UserSiteViewController = (segue.destination as? UserSiteViewController)!
+            // SubViewController のselectedImgに選択された画像を設定する
+//            subVC.selectedImg = selectedImage
+        }
     }
 }
